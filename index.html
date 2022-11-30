@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/image/jam.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAMをSTACK</title>
+  <meta property="og:title" content="JAMをSTACK">
+  <meta property="og:description" content="ジャムを空高く積み上げろ！">
+  <meta property="og:url" content="https://jamstack-higher.vercel.app">
+  <meta property="og:image" content="https://jamstack-higher.vercel.app/image/ogpimage.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JAMをSTACK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@de_teiu_tkg">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <div id="canvas-parent"></div>
+  <div id="result-wrapper" class="hidden">
+    <div class="panel">
+      <img src="/image/result.png">
+      <p id="result-message"></p>
+      <div class="flex">
+        <button id="btn-restart" class="button">再挑戦</button>
+        <a id="btn-tweet" class="button" target="_blank" rel="noopener">ツイート</a>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/index.ts"></script>
+</body>
+
+</html>
